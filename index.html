@@ -1,9 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--this will display  properly the web on mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--css reset page-->	
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Latest compiled and minified CSS boostrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	
+
+
+	<!--my css page linked-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<title>M-Fab Custom Fish Tanks</title>
 </head>
 <body>
+
+	<div class="jumbotron">
+		<div class="container">
+		   <h2>Custom Fish Tank Stand<br>
+		    stainless aluminum steel  </h2>
+		    <a><p>How we do it</p></a>
+		    <a><p>Contact</p></a>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h1>How we do it</h1>
+
+				<div class="embed-responsive embed-responsive-16by9">
+  					<iframe src="https://player.vimeo.com/video/185414978" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+
+				<p>3/4 - Aquarium Base joints welded with MIG or TIG methods<br>
+				1 - Aquarium stand built from custom CAD design<br>
+				2 - Supports any shape, size and weight fishtank or Aquaspace<br>
+				4/3 - Costumer support ensure fishtanks stands meets exacr specifications</p>
+
+				<form class="form-horizontal" role="form" method="post" action="index.php">
+					<div class="form-group">
+						<label for="name" class="col-sm-2 control-label">Name</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="name" name="name" placeholder="Name" value="">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="email" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="message" class="col-sm-2 control-label">Message</label>
+						<div class="col-sm-10">
+							<textarea class="form-control" rows="4" name="message"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-10 col-sm-offset-2">
+							<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-10 col-sm-offset-2">
+							<!-- Will be used to display an alert to the user-->
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>	
+	</div>
 
 </body>
 </html>
