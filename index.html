@@ -12,11 +12,12 @@
 	<!-- Latest compiled and minified CSS boostrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	
+	<link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
+
 
 
 	<!--my css page linked-->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
 	<title>M-Fab Custom Fish Tanks</title>
 </head>
@@ -24,17 +25,24 @@
 
 	<div class="jumbotron">
 		<div class="container">
-		   <h2>Custom Fish Tank Stand<br>
-		    stainless aluminum steel  </h2>
-		    <a><p>How we do it</p></a>
-		    <a><p>Contact</p></a>
+
+			<div class ="col-md-8">
+			   <h2>Custom Fish Tank Stand<br>
+			    stainless aluminum steel  </h2>
+		    </div>
+		    <div class="col-md-3">
+		    <img id="headerLogo" src="assets/images/M-FAB2.png" alt="M-Fab logo">
+
+		    <a href="#How"><p>How we do it</p></a>
+		    <a href="#contact"><p>Contact</p></a>
+		    </div>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
-				<h1>How we do it</h1>
+			<div class="col-md-6" id="mainContainer">
+				<h1 class="title">How we do it</h1>
 
 				<div class="embed-responsive embed-responsive-16by9">
   					<iframe src="https://player.vimeo.com/video/185414978" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -43,9 +51,12 @@
 				<p>3/4 - Aquarium Base joints welded with MIG or TIG methods<br>
 				1 - Aquarium stand built from custom CAD design<br>
 				2 - Supports any shape, size and weight fishtank or Aquaspace<br>
-				4/3 - Costumer support ensure fishtanks stands meets exacr specifications</p>
+				4/3 - Costumer support, ensure fishtanks stands meets exact specifications.</p>
 
-				<form class="form-horizontal" role="form" method="post" action="index.php">
+			<div id="contact">
+				<h1 class="title">Contact</h1>
+
+				<form class="form-horizontal" role="form" method="post" action="php-form-action.php" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Name</label>
 						<div class="col-sm-10">
@@ -59,10 +70,20 @@
 						</div>
 					</div>
 					<div class="form-group">
+						<label for="phone" class="col-sm-2 control-label">phone</label>
+						<div class="col-sm-10">
+							<input type="tel" class="form-control" id="email" name="email" placeholder="123-456-7890" value="">
+						</div>
+					</div>
+					<div class="form-group">
 						<label for="message" class="col-sm-2 control-label">Message</label>
 						<div class="col-sm-10">
 							<textarea class="form-control" rows="4" name="message"></textarea>
 						</div>
+					</div>
+					<div class="form-group">
+						<label for='uploaded_file' class="col-sm-3 control-label">Select A File To Upload:</label>
+						<input type="file" name="uploaded_file">
 					</div>
 					<div class="form-group">
 						<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
@@ -84,6 +105,17 @@
 			</div>
 		</div>	
 	</div>
+</div>	
+
+	<footer>
+	<div class="container">
+		<div class="col-md-12">
+			<p id="footerTxt">Fabricated in USA<br>
+			mccorthyfab.com<br>
+			555-555-5555</p>
+		</div>
+
+	</footer>	
 
 </body>
 </html>

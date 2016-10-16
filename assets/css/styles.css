@@ -1,0 +1,38 @@
+#headerLogo{
+	height:250px;
+}
+
+#mainContainer{
+	margin-left: 25%;
+	background-color: white ;
+}
+
+.jumbotron{
+ 
+background: -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+background-size: 10px 10px, 10px 10px, 100% 100%;
+background-repeat: repeat, repeat, no-repeat;
+background-position: 1px 1px, 0px 0px, center center;
+}
+
+body{
+	background-color: #1672b9;
+}
+
+.title{
+	font-family: 'Eczar', serif;
+	text-align: center;
+}
+
+footer{
+background: -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+background-size: 10px 10px, 10px 10px, 100% 100%;
+background-repeat: repeat, repeat, no-repeat;
+background-position: 1px 1px, 0px 0px, center center;
+}
+
+#footerTxt{
+	text-align: center;
+	font-size: 0.8em;
+	padding:15px 0 15px 0;
+}
